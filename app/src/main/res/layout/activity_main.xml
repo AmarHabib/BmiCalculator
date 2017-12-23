@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.amar.bmicalculator.MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BMI CALCULATOR"
+        android:layout_marginTop="40dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="40sp"
+        android:textStyle="bold"
+
+        android:id="@+id/textView" />
+
+    <EditText
+        android:id="@+id/heightget"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+
+        android:hint="Enter Height"
+
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/weightget"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/heightget"
+        android:layout_alignRight="@+id/heightget"
+        android:layout_below="@+id/heightget"
+        android:layout_marginTop="60dp"
+        android:hint="Enter Weight"
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/buttoncalc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/weightget"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="55dp"
+        android:text="ClaCulate"
+        android:onClick="mcalc"
+        android:textSize="20sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/buttoncalc"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="43dp"
+        android:textSize="30sp"
+        android:text="Result" />
+
+</RelativeLayout>
